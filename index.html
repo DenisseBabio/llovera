@@ -4,22 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>¿Lloverá?</title>
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script type="module" src="/js/script.js" defer></script>
+  </head>
+  <body>
     <header>
-
-        <h1>//NOMBRE DE LA WEB //</h1>
-        <h2>Lloverá en las próximas 8 horas?</h2>
-
-
+      <h1>//NOMBRE DE LA WEB //</h1>
+      <h2>Lloverá en las próximas 8 horas?</h2>
     </header>
 
     <main>
-        <button id="button">Compruebalo aquí!</button>
-        <div id="weatherinfo"></div>
+      <button id="button">Compruebalo aquí!</button>
+      <div id="weatherInfo"></div>
+      <div class="containerHidden">
+        <section id="actually">
+          <h2></h2>
+          <p class="actuallyHour"></p>
+          <img id="currentImage" src="" />
+          <p class="degree"></p>
+        </section>
 
+        <section id="nextHours"></section>
+
+        <section id="rain">
+          <p>Va a llover en tu ciudad en las próximas horas.</p>
+        </section>
+
+        <section id="noRain">
+          <p>No va a llover en tu ciudad en las próximas horas.</p>
+        </section>
+
+        <section id="error">
+          <p>Error en la recepción de datos.</p>
+        </section>
+      </div>
     </main>
 
     <footer>
@@ -36,11 +54,11 @@
         <p>HACK A BOSS 2024.</p>
       </div>
 
-        <div id="img">
-            <img src="https://assets-global.website-files.com/5f3108520188e7588ef687b1/620e82ff8680cd26532fff29_Logotipo%20HACK%20A%20BOSS_white%20100%20px.svg">
-            <a href="https://www.hackaboss.com/">www.hackaboss.com</a>
-        </div>
-  
+      <div id="img">
+        <img
+          src="https://assets-global.website-files.com/5f3108520188e7588ef687b1/620e82ff8680cd26532fff29_Logotipo%20HACK%20A%20BOSS_white%20100%20px.svg" />
+        <a href="https://www.hackaboss.com/">www.hackaboss.com</a>
+      </div>
     </footer>
 
     <script src="./js/script.js"></script>
