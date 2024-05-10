@@ -1,4 +1,4 @@
-/* Estilos base */
+
 * {
   margin: 0;
   padding: 0;
@@ -117,6 +117,12 @@ footer #img a:hover {
     color: darkorchid; 
     text-decoration: underline;
 }
+
+#rain, #noRain, #error {
+    display: none;
+}
+
+
 
 @media screen and (min-width: 600px){
     h1{
