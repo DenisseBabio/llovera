@@ -7,16 +7,34 @@
     <link rel="stylesheet" href="/css/styles.css" />
     <script type="module" src="/js/script.js" defer></script>
   </head>
+
   <body>
+    
     <header>
       <h1>//NOMBRE DE LA WEB //</h1>
       <h2>Lloverá en las próximas 8 horas?</h2>
     </header>
 
     <main>
+
       <button id="button">Compruebalo aquí!</button>
+
       <div id="weatherInfo"></div>
+
       <div class="containerHidden">
+
+        <section id="rain" class="hidden">
+          <p>Va a llover en tu ciudad en las próximas horas.</p>
+        </section>
+
+        <section id="noRain" class="hidden">
+          <p>No va a llover en tu ciudad en las próximas horas.</p>
+        </section>
+
+        <section id="error" class="hidden">
+          <p>Error en la recepción de datos.</p>
+        </section>
+
         <section id="actually">
           <h2></h2>
           <p class="actuallyHour"></p>
@@ -26,17 +44,6 @@
 
         <section id="nextHours"></section>
 
-        <section id="rain">
-          <p>Va a llover en tu ciudad en las próximas horas.</p>
-        </section>
-
-        <section id="noRain">
-          <p>No va a llover en tu ciudad en las próximas horas.</p>
-        </section>
-
-        <section id="error">
-          <p>Error en la recepción de datos.</p>
-        </section>
       </div>
     </main>
 
