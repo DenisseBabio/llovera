@@ -1,7 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('../img/background.png');
+
+}
+
+header, footer {
+    background-color: aquamarine;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main{
+    padding: 20px;
+}
+
+button{
+    background-color: blue;
+    color: azure;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: blueviolet;
+}
+
 #rain, #noRain, #error {
     display: none;
 };
 
 .hidden {
     display: none;
+}
+
+#names, #hack, #img{
+    margin-top: 20px;
+}
+
+#names ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+#img{
+    width: 100px;
+    height: auto;
+}
+
+#img a{
+    color: crimson;
+    text-decoration: none;
+}
+
+#weatherInfo{
+    margin-top: 20px;
+}
+
+#actually, #nextHours, #rain, #noRain, #error{
+    margin-top: 20px;
+    text-align: center;
+}
+#currentImage{
+    width: 100px;
+    height: auto;
+}
+
+@media screen and (max-width: 600px) {
+    h1{
+    font-size: 24px;
+}
 }

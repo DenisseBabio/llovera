@@ -1,7 +1,7 @@
 "use strict";
 
 // Importamos funcion desde helpers
-import { getWeatherIcon } from "/js/helpers.js";
+import { getWeatherIcon } from "./helpers.js";
 
 // Indicamos cuando se debe añadir cada dato
 document.addEventListener('DOMContentLoaded', function() {
@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     //Controlamos botón
     buttonSend.addEventListener("click", () => {
         console.log("click");
+        buttonSend.style.display = "none";
 
         //Comprobamos ubicacion
         if (navigator.geolocation) {
