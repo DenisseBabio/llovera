@@ -27,6 +27,7 @@ header {
 }
 
 h1 {
+    margin: 15px;
     font-size: 36px;
     color:navy;
     padding-bottom: 10px;
@@ -68,7 +69,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
+    margin-top: 35px;
 }
 
 .nextHoursContainer img {
