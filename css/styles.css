@@ -64,11 +64,11 @@ button {
     z-index: 1;
 }
 
-.nextHours {
+#nextHours {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: navy;
+    justify-content: space-around;
+
 }
 
 .nextHoursContainer img {
