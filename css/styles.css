@@ -1,81 +1,145 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url('../img/background.png');
+  display: grid;
+  grid-template-rows: 1fr 4fr 0.5fr;
+  grid-template-columns: 1fr;
+  font-family: Arial, sans-serif;
+  background-image: url('./img/6493501.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
 
 }
 
-header, footer {
-    background-color: aquamarine;
-    color: black;
+header {
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+
+h1 {
+    font-size: 36px;
+    color:navy;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    color: navy; 
 }
 
 main{
+   width: 100vw;
+   text-align: center;
+   padding: 20px 0;
+} 
+
+button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    background-color:rgb(207, 235, 246) ; 
+    color: navy;
+    border: 2px solid navy;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; 
+}
+
+.containerHidden p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: navy;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+
+.nextHours {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: navy;
+}
+
+.nextHoursContainer img {
+    background-color: navy;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.nextHoursContainer h3{
+    display: flex;
+    justify-content: center;
+    color: navy;
+    
+}
+
+.nextHoursContainer p{
+    display: flex;
+    justify-content: center;
+    color: navy;
+    margin-bottom: 15px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
 }
-
-button{
-    background-color: blue;
-    color: azure;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+footer #names, #hack, #img{
+    text-align: center;
+    color: navy;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
 }
 
-button:hover{
-    background-color: blueviolet;
+footer #names ul {
+    list-style: none;
 }
 
-#rain, #noRain, #error {
-    display: none;
-};
-
-.hidden {
-    display: none;
-}
-
-#names, #hack, #img{
-    margin-top: 20px;
-}
-
-#names ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-#img{
-    width: 100px;
-    height: auto;
-}
-
-#img a{
-    color: crimson;
+footer #img a {
+    color: navy;
     text-decoration: none;
 }
 
-#weatherInfo{
-    margin-top: 20px;
+footer #img a:hover {
+    color: darkorchid; 
+    text-decoration: underline;
 }
 
-#actually, #nextHours, #rain, #noRain, #error{
-    margin-top: 20px;
-    text-align: center;
-}
-#currentImage{
-    width: 100px;
-    height: auto;
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px){
     h1{
-    font-size: 24px;
-}
+        font-size: 42px;
+        padding-bottom: 15px;
+    }
+    h2{
+        font-size: 36px;
+    }
+    main{
+        padding: 30px 0;
+    }
+    button{
+        font-size: 36px;
+        padding: 15px 25px;
+    }
+    .containerHidden p {
+        font-size: 25px;
+    }
+    footer #names, #hack, #img {
+        font-size: 15px;
+    }
+    footer{
+        padding: 25px;
+    }
 }
