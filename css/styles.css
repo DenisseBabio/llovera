@@ -1,151 +1,164 @@
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: grid;
+    grid-template-rows: 1fr 4fr 0.5fr;
+    grid-template-columns: 1fr;
+    font-family: Arial, sans-serif;
+    background-image: url('./img/jakub-kriz-06lv_LBX3pk-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+  
+  }
+  
+  header {
+      text-align: center;
+      padding: 20px 20px;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+  }
+  
+  h1 {
+      margin: 5px;
+      font-weight: bold;
+      font-size: 36px;
+      color:rgb(255, 255, 255);
+      padding-bottom: 10px;
+      text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 
-body {
-  display: grid;
-  grid-template-rows: 1fr 4fr 0.5fr;
-  grid-template-columns: 1fr;
-  font-family: Arial, sans-serif;
-  background-image: url('./img/6493501.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100vw;
+  }
+  
+  h2 {
+      font-size: 16px;
+      font-weight: 100;
+      color: rgb(255, 255, 255); 
+      text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  main{
+     width: 100vw;
+     text-align: center;
+     padding: 15px 0;
+  } 
+  
+  button {
+      padding: 10px 20px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+      font-size: 24px;
+      background-color:rgb(236, 186, 255) ; 
+      color: rgb(138, 57, 185);
+      border: 2px solid rgb(138, 57, 185);;
+      cursor: pointer;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; 
+  }
+  
+  .containerHidden p {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: rgb(102, 42, 138);
+      position: relative;
+      z-index: 1;
+      text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  #nextHours {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 25px;
+  }
+  
+  .nextHoursContainer img {
+      background-color: rgb(138, 57, 185);
+      border-radius: 10px;
+      margin: 5px;
+      box-shadow: 5px 3px 8px rgba(0, 0, 0, 1);
+      transition: transform 0.3s ease-in-out;
+  }
 
-}
+  .nextHoursContainer img:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  .nextHoursContainer h3{
+      display: flex;
+      justify-content: center;
+      color: rgb(61, 16, 82);
+  }
+  
+  .nextHoursContainer p{
+      display: flex;
+      justify-content: center;
+      color: rgb(61, 16, 82);
+      margin-bottom: 15px;
+  }
+  
+  footer{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+  }
 
-header {
-    text-align: center;
-    padding: 20px 20px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
-}
+  footer #names, #hack, #link{
+      text-align: center;
+      color: rgb(61, 16, 82);
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 12px;
+  }
+  
+  footer #names ul {
+      list-style: none;
+  }
 
-h1 {
-    font-size: 36px;
-    color:navy;
-    padding-bottom: 10px;
-}
-
-h2 {
-    font-size: 24px;
-    color: navy; 
-}
-
-main{
-   width: 100vw;
-   text-align: center;
-   padding: 20px 0;
-} 
-
-button {
-    padding: 10px 20px;
-    border-radius: 50px;
-    margin-bottom: 20px;
-    font-size: 24px;
-    background-color:rgb(207, 235, 246) ; 
-    color: navy;
-    border: 2px solid navy;
-    cursor: pointer;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; 
-}
-
-.containerHidden p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    color: navy;
-    font-weight: bold;
-    position: relative;
-    z-index: 1;
-}
-
-#nextHours {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-}
-
-.nextHoursContainer img {
-    background-color: navy;
-    border-radius: 10px;
-    margin: 5px;
-}
-
-.nextHoursContainer h3{
-    display: flex;
-    justify-content: center;
-    color: navy;
-    
-}
-
-.nextHoursContainer p{
-    display: flex;
-    justify-content: center;
-    color: navy;
-    margin-bottom: 15px;
-}
-
-footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-footer #names, #hack, #img{
-    text-align: center;
-    color: navy;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 12px;
-}
-
-footer #names ul {
-    list-style: none;
-}
-
-footer #img a {
-    color: navy;
+  footer #link a {
+    color: rgb(61, 16, 82);
     text-decoration: none;
 }
 
-footer #img a:hover {
-    color: darkorchid; 
+footer #link a:hover {
+    color: rgb(138, 57, 185); 
     text-decoration: underline;
 }
 
-#rain, #noRain, #error {
-    display: none;
-}
-
-
-
-@media screen and (min-width: 600px){
-    h1{
-        font-size: 42px;
-        padding-bottom: 15px;
-    }
-    h2{
-        font-size: 36px;
-    }
-    main{
-        padding: 30px 0;
-    }
-    button{
-        font-size: 36px;
-        padding: 15px 25px;
-    }
-    .containerHidden p {
-        font-size: 25px;
-    }
-    footer #names, #hack, #img {
-        font-size: 15px;
-    }
-    footer{
-        padding: 25px;
-    }
-}
+  #rain, #noRain, #error {
+      display: none;
+  }
+  
+  
+  
+  @media screen and (min-width: 600px){
+      h1{
+          font-size: 42px;
+          padding-bottom: 15px;
+      }
+      h2{
+          font-size: 36px;
+      }
+      main{
+          padding: 30px 0;
+      }
+      button{
+          font-size: 36px;
+          padding: 15px 25px;
+      }
+      .containerHidden p {
+          font-size: 25px;
+      }
+      footer #names, #hack, #img {
+          font-size: 15px;
+      }
+      footer{
+          padding: 25px;
+      }
+  }
