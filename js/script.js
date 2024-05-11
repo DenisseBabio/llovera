@@ -92,12 +92,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
 
 
-                // Ocultar el botón al pulsarlo.
-                const buttonSend = document.getElementById("button");
-
-                buttonSend.addEventListener("click", () => {
-                buttonSend.style.display = "none";
-                });
+                function ocultarBoton() {
+                    // Ocultar el botón
+                    document.getElementById('button').style.display = 'none';
+                  }
 
                   
                 //Llamamos a las funciones
