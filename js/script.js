@@ -1,7 +1,7 @@
 "use strict";
 
 // Importamos funcion desde helpers
-import { getWeatherIcon } from "/js/helpers.js";
+import { getWeatherIcon } from "./helpers.js";
 
 // Indicamos cuando se debe añadir cada dato
 document.addEventListener('DOMContentLoaded', function() {
@@ -91,10 +91,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 }
 
-                function ocultarBoton() {
-                    // Ocultar el botón
-                    document.getElementById('button').style.display = 'none';
-                  }
+
+                // Ocultar el botón al pulsarlo.
+                const buttonSend = document.getElementById("button");
+
+                buttonSend.addEventListener("click", () => {
+                buttonSend.style.display = "none";
+                });
+
                   
                 //Llamamos a las funciones
                 getHours();
